@@ -16,3 +16,97 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+/* TASK 1 GALLERY STYLES */
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.0s ease, opacity 1.0s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.00);
+  opacity: 0.9;
+}
+
+.main-title{
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.black-link{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.black-link:hover{
+  text-decoration: underline;
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* TASK 2 FORM STYLES */
+.feedback-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            gap: 15px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+          
+        }
